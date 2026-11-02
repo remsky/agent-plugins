@@ -135,7 +135,7 @@ export const register: Register = (on, options) => {
       wasRebuilt && <Text color="error">cache rebuilt</Text>,
       // quiet while actively working: only once the cache is under CACHE_SHOW_MS, or cold
       at !== null && left < CACHE_SHOW_MS && (
-        left <= 0 ? <Text color="inactive">○ cache cold</Text>
+        left <= 0 ? <Text color="merged">○ cache cold</Text>
         : (
           <Text color={left < 15 * 60_000 ? 'error' : left < 30 * 60_000 ? 'warning' : 'success'}>
             ● cache {remaining(left)}
