@@ -1,0 +1,42 @@
+{
+  "name": "usage-band",
+  "description": "Band above the prompt: live prompt-cache countdown, 5h/weekly usage, context fill",
+  "author": {
+    "name": "remsky",
+    "url": "https://github.com/remsky"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "compactSoonK": {
+      "type": "number",
+      "title": "Tokens: yellow above (K)",
+      "description": "Context size in thousands where the token count turns yellow (default 90)",
+      "default": 90
+    },
+    "compactNowK": {
+      "type": "number",
+      "title": "Tokens: red above (K)",
+      "description": "Context size in thousands where the token count turns red (default 130)",
+      "default": 130
+    },
+    "cacheTtlMinutes": {
+      "type": "number",
+      "title": "Cache lifetime (minutes)",
+      "description": "60 on a subscription, 5 on an API key or usage overage (default 60)",
+      "default": 60
+    },
+    "cacheShowMinutes": {
+      "type": "number",
+      "title": "Show cache under (minutes)",
+      "description": "The cache countdown appears once this much time is left (default 45)",
+      "default": 45
+    },
+    "rebuiltK": {
+      "type": "number",
+      "title": "Cache rebuilt above (K)",
+      "description": "Cache writes in thousands that count as a rebuild (default 50)",
+      "default": 50
+    }
+  }
+}

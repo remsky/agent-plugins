@@ -1,0 +1,17 @@
+{
+  "name": "remsky",
+  "owner": {
+    "name": "remsky",
+    "url": "https://github.com/remsky"
+  },
+  "metadata": {
+    "description": "remsky agent plugins"
+  },
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./usage-band",
+      "description": "Band above the prompt: live prompt-cache countdown, 5h/weekly usage, context fill."
+    }
+  ]
+}
