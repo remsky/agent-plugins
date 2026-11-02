@@ -16,7 +16,7 @@ Updates follow the commit SHA on `main`. Run `claude plugin update usage-band@re
 ## Plugins
 
 <details open>
-<summary><b>usage-band</b>: Claude Code Mod: live usage and cache monitoring band</summary>
+<summary><b>usage-band</b> [<img src="usage-band/.claude-plugin/icon.png" height="20" align="top">]: Claude Code Mod: live usage and cache monitoring band</summary>
 
 - Shows (startup) + message token counts, 5-hour limit reset timer, a stacked 5hr/weekly limit usage, and the time left on the prompt cache.
 - *If you use an API key, set the cache lifetime to 5 minutes on the install screen.*
